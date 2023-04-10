@@ -1,0 +1,27 @@
+.main_navbar {
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    color: #FF6060;
+}
+
+.navbar_logo {
+    height: 60px;
+}
+
+.nav_links {
+    display: flex;
+    list-style-type: none;
+    margin-top: auto;
+    gap: 30px;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.current_page {
+    border-bottom: solid 1.5px;
+}

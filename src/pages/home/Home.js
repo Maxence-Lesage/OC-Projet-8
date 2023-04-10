@@ -1,8 +1,23 @@
+import '../Base.css';
 import './Home.css';
+import Navbar from '../../components/navbar/Navbar';
+import Banner from '../../components/banner/Banner';
+import Thumb from '../../components/thumb/Thumb';
+import data from "../../data.json";
+import bannerImage from "../../background1.jpg";
 
 function Home() {
+
+    const thumbs = data.map(item => {
+        return <Thumb key={item.id} cover={item.cover} description={item.description} title={item.title} />;
+    });
+
     return (
-        <p>Hello</p>
+        <>
+            <Navbar />
+            <Banner src={bannerImage} alt="Bord de mer avec pics rocheux" title="Chez vous, partout et ailleurs" height={1} />
+            {thumbs}
+        </>
     );
 }
 

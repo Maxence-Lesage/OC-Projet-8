@@ -1,0 +1,19 @@
+.thumb {
+    position: relative;
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.thumb_image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.thumb_title {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
