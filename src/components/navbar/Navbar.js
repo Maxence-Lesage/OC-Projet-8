@@ -12,7 +12,7 @@ function Navbar() {
             <img className="navbar_logo" src={logo} alt="Logo de Kasa" />
             <ul className="nav_links">
                 <li><Link className={homeClass} to={"/"}>Accueil</Link></li>
-                <li><Link className={aboutClass} to={"about"}>À propos</Link></li>
+                <li><Link className={aboutClass} to={"/about"}>À propos</Link></li>
             </ul>
         </nav>
     );

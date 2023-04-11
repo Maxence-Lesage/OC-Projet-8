@@ -6,14 +6,35 @@
     overflow: hidden;
 }
 
+@media all and (max-width: 800px) {
+    .thumb {
+        height: 255px;
+        width: 335px;
+    }
+}
+
 .thumb_image {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
+.thumb_shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
 .thumb_title {
     position: absolute;
     left: 10px;
     bottom: 10px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin: 0;
 }
