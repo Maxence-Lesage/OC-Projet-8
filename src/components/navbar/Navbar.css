@@ -7,19 +7,20 @@
 }
 
 .navbar_logo {
-    height: 60px;
+    width: clamp(5rem, -2.2115rem + 30.7692vw, 11.25rem);
 }
 
 .nav_links {
     display: flex;
     list-style-type: none;
-    margin-top: auto;
-    gap: 30px;
+    column-gap: clamp(0.625rem, -0.8173rem + 6.1538vw, 1.875rem);
+    margin: auto 0;
 }
 
 .link {
     text-decoration: none;
     color: inherit;
+    font-size: clamp(0.75rem, -0.1154rem + 3.6923vw, 1.5rem);
 }
 
 .current_page {

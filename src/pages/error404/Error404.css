@@ -1,0 +1,31 @@
+.errorMessage {
+    display: flex;
+    flex-direction: column;
+    color: #FF6060;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.errorMessage_code {
+    font-weight: 700;
+    font-size: 288px;
+    margin: 0;
+}
+
+.errorMessage_text {
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0;
+}
+
+.backToHome {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 200px;
+    border-bottom: solid 1px;
+}
+
+.link {
+    color: inherit;
+}
