@@ -9,20 +9,21 @@
 
 .errorMessage_code {
     font-weight: 700;
-    font-size: 288px;
+    font-size: clamp(6rem, 1.3333rem + 26.6667vw, 18rem);
     margin: 0;
 }
 
 .errorMessage_text {
     font-weight: 500;
-    font-size: 36px;
+    font-size: clamp(1.125rem, 0.6875rem + 2.5vw, 2.25rem);
     margin: 0;
+    text-align: center;
 }
 
 .backToHome {
     font-weight: 500;
-    font-size: 18px;
-    margin-top: 200px;
+    font-size: clamp(0.875rem, 0.7778rem + 0.5556vw, 1.125rem);
+    margin-top: clamp(6.25rem, 1.2153rem + 18.0556vw, 12.5rem);
     border-bottom: solid 1px;
 }
 

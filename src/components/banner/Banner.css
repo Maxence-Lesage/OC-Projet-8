@@ -1,5 +1,5 @@
 .banner {
-    border-radius: 25px;
+    border-radius: clamp(10px, 0.2604rem + 2.0833vw, 25px);
     position: relative;
     overflow: hidden;
 }
@@ -25,14 +25,17 @@
 
 .banner_title {
     color: white;
-    font-size: 48px;
+    font-size: clamp(1.25rem, 0.5694rem + 3.8889vw, 3rem);
     font-weight: 500;
+    padding: 0px 20px;
 }
 
 .banner_any {
-    height: 223px;
+    height: clamp(6.9375rem, 4.2153rem + 15.5556vw, 13.9375rem);
+    width: auto;
 }
 
 .banner_accommodation {
-    height: 415px;
+    height: clamp(15.9375rem, 12.0486rem + 22.2222vw, 25.9375rem);
+    width: auto;
 }

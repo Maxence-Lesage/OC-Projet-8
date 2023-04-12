@@ -6,10 +6,10 @@
     overflow: hidden;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 475px) {
     .thumb {
-        height: 255px;
-        width: 335px;
+        height: clamp(220px, 10.609rem + 17.9487vw, 255px);
+        width: auto;
     }
 }
 
