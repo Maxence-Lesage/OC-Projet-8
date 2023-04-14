@@ -1,0 +1,13 @@
+.stars {
+    display: flex;
+    gap: clamp(6.5px, 0.1997rem + 1.1806vw, 15px);
+}
+
+.star {
+    height: clamp(0.8125rem, 0.5451rem + 1.5278vw, 1.5rem);
+    color: #E3E3E3;
+}
+
+.valid {
+    color: #FF6060;
+}

@@ -12,7 +12,7 @@
 .thumbs_container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, auto);
+    grid-template-columns: repeat(auto-fit, 340px);
     gap: 60px 50px;
     justify-content: center;
 }
@@ -24,6 +24,7 @@
     }
 
     .thumbs_container {
+        grid-template-columns: repeat(auto-fit, 100%);
         gap: 20px 0px;
     }
 }
