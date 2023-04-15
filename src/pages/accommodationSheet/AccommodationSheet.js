@@ -6,6 +6,7 @@ import Dropdown from '../../components/dropdown/Dropdown';
 import Host from '../../components/host/Host';
 import Stars from '../../components/stars/Stars';
 import data from "../../data.json";
+import Footer from '../../components/footer/Footer';
 import { useLocation } from 'react-router-dom';
 import { createElement } from 'react';
 
@@ -48,6 +49,7 @@ function AccommodationSheet(props) {
                     <Dropdown key="Dropdown-2" title="Équipement" content={accData.equipments} type={"list"} />
                 </div>
             </div>
+            <Footer />
         </>
     );
 }

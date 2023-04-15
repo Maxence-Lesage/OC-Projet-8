@@ -3,6 +3,7 @@ import './Home.css';
 import Navbar from '../../components/navbar/Navbar';
 import Banner from '../../components/banner/Banner';
 import Thumb from '../../components/thumb/Thumb';
+import Footer from '../../components/footer/Footer';
 import data from "../../data.json";
 import bannerImage from "../../background1.jpg";
 
@@ -21,6 +22,7 @@ function Home() {
                     {thumbs}
                 </div>
             </div>
+            <Footer />
         </>
     );
 }

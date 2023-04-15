@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import '../Base.css';
 import './Error404.css';
 import Navbar from '../../components/navbar/Navbar';
+import Footer from '../../components/footer/Footer';
 
 function Error404() {
 
@@ -13,6 +14,7 @@ function Error404() {
                 <h1 className="errorMessage_text">Oups! La page que vous demandez n'existe pas.</h1>
                 <h2 className="backToHome"><Link className="link" to={"/"}>Retourner sur la page d'accueil</Link></h2>
             </div>
+            <Footer />
         </>
     );
 }
