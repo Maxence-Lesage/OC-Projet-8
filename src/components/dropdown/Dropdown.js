@@ -16,9 +16,6 @@ function Dropdown(props) {
             setIcon(faChevronUp);
         }
 
-        if (props.isParent) {
-            detailsRef.current.classList.toggle("parent");
-        }
     }
 
     let content = props.content;
@@ -34,10 +31,6 @@ function Dropdown(props) {
 
     const type = (props.type === "list" ? "contentList" : "");
     const ghost = (props.isGhost ? "ghost" : "");
-
-    if (props.isGhost) {
-        detailsRef.current.setAttribute("open", true);
-    }
 
     return (
         <details className={"detailsBox " + ghost} onToggle={handleClick} ref={detailsRef}>
