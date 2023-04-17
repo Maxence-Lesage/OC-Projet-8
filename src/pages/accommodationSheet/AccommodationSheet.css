@@ -82,4 +82,8 @@
         flex-direction: column;
         gap: 20px;
     }
+
+    .dropdown {
+        width: 100%;
+    }
 }

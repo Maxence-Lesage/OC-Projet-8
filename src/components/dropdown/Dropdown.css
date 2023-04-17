@@ -42,8 +42,15 @@
     margin: 0;
 }
 
-@media all and (max-width: 550px) {
-    .detailsBox {
-        width: 100%;
-    }
+.ghost {
+    width: inherit;
+    top: 0;
+    color: transparent;
+    background-color: transparent;
+    margin-top: -51px;
+    visibility: hidden;
+}
+
+.parent {
+    position: absolute;
 }

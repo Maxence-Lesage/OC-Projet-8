@@ -10,10 +10,14 @@ function Dropdown(props) {
 
     function handleClick() {
 
-        if (detailsRef.current.open) {
+        if (!detailsRef.current.open) {
             setIcon(faChevronDown);
         } else {
             setIcon(faChevronUp);
+        }
+
+        if (props.isParent) {
+            detailsRef.current.classList.toggle("parent");
         }
     }
 
@@ -28,13 +32,20 @@ function Dropdown(props) {
         });
     }
 
+    const type = (props.type === "list" ? "contentList" : "");
+    const ghost = (props.isGhost ? "ghost" : "");
+
+    if (props.isGhost) {
+        detailsRef.current.setAttribute("open", true);
+    }
+
     return (
-        <details className="detailsBox" onClick={handleClick} ref={detailsRef}>
+        <details className={"detailsBox " + ghost} onToggle={handleClick} ref={detailsRef}>
             <summary className="detailsBox_summary">
                 <h2 className="summary_title">{props.title}</h2>
                 <FontAwesomeIcon icon={icon} />
             </summary>
-            <p className={"detailsBox_content " + (props.type === "list" ? "contentList" : "")}>{content}</p>
+            <p className={"detailsBox_content " + type}>{content}</p>
         </details>
     )
 

@@ -1,0 +1,13 @@
+.about_dropdowns {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 25px;
+    gap: clamp(1.25rem, 1.0069rem + 1.3889vw, 1.875rem);
+}
+
+.about_dropdown {
+    width: 100%;
+    position: relative;
+}
