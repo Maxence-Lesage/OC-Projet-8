@@ -14,7 +14,7 @@ function AccommodationSheet(props) {
 
     const { id } = useLocation().state;
     const accData = data.filter(item => item.id === id)[0];
-    const image = accData.cover;
+    const image = accData.pictures;
     const title = accData.title;
     const location = accData.location;
     const tags = accData.tags.map(tag => {
