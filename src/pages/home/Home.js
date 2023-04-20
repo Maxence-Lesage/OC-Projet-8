@@ -5,7 +5,7 @@ import Banner from '../../components/banner/Banner';
 import Thumb from '../../components/thumb/Thumb';
 import Footer from '../../components/footer/Footer';
 import data from "../../data.json";
-import bannerImage from "../../background1.jpg";
+import bannerImage from "../../images/background1.jpg";
 
 function Home() {
 

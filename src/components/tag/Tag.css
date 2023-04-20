@@ -1,0 +1,9 @@
+.tags {
+    border-radius: clamp(5px, 0.191rem + 0.6944vw, 10px);
+    color: white;
+    font-weight: 500;
+    font-size: clamp(0.625rem, 0.5278rem + 0.5556vw, 0.875rem);
+    background-color: #FF6060;
+    padding: 3px clamp(30px, 1.6319rem + 1.3889vw, 40px);
+    width: fit-content;
+}

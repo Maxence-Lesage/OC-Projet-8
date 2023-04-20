@@ -47,10 +47,6 @@
     top: 0;
     color: transparent;
     background-color: transparent;
-    margin-top: -51px;
+    margin-top: -52px;
     visibility: hidden;
-}
-
-.parent {
-    position: absolute;
 }

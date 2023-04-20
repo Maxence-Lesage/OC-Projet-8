@@ -2,9 +2,10 @@ import '../Base.css';
 import './About.css';
 import Navbar from '../../components/navbar/Navbar';
 import Banner from '../../components/banner/Banner';
-import bannerImage from "../../background2.jpg";
+import bannerImage from "../../images/background2.jpg";
 import Footer from '../../components/footer/Footer';
 import Dropdown from '../../components/dropdown/Dropdown';
+import { useState } from 'react';
 
 function About() {
 
@@ -12,6 +13,8 @@ function About() {
     const respect = "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.";
     const service = "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.";
     const securite = "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.";
+
+    const [isOpen, setOpen] = useState(false);
 
     return (
         <>
@@ -28,8 +31,8 @@ function About() {
                     <Dropdown key="About-Dropdown-1" title="Service" content={service} />
                 </div>
                 <div className='about_dropdown'>
-                    <Dropdown key="About-Dropdown-1" title="Sécurité" content={securite} isParent={true} />
-                    <Dropdown key={"About-Dropdown-1-ghost"} title="Sécurité" content={securite} isGhost={true} />
+                    <Dropdown key="About-Dropdown-1" title="Sécurité" content={securite} isOpen={isOpen} setOpen={setOpen} />
+                    <Dropdown key="About-Dropdown-1-ghost" title="Sécurité" content={securite} isGhost={true} isOpen={isOpen} />
                 </div>
             </div>
             <Footer />
