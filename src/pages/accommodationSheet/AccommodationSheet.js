@@ -10,19 +10,21 @@ import Footer from '../../components/footer/Footer';
 import Tag from '../../components/tag/Tag';
 import { useLocation } from 'react-router-dom';
 
-function AccommodationSheet(props) {
+function AccommodationSheet() {
 
-    const { id } = useLocation().state;
+    const defaultId = { id: "c67ab8a7" };
+    let { id } = useLocation().state || defaultId;
     const accData = data.filter(item => item.id === id)[0];
     const image = accData.pictures;
     const title = accData.title;
     const location = accData.location;
     const tags = accData.tags.map(tag => {
         return (
-            <Tag tag={tag} />
+            <Tag key={tag} tag={tag} />
         )
     });
 
+    // const math = Math.random();
     return (
         <>
             <Navbar />
@@ -32,7 +34,7 @@ function AccommodationSheet(props) {
                 <div className="wrapper_left">
                     <h1 className="accommodation_title">{title}</h1>
                     <div className="accommodation_location">{location}</div>
-                    <div className="tags_list" key={accData.id}>{tags}</div>
+                    <div className="tags_list">{tags}</div>
                 </div>
                 <div className="wrapper_right">
                     <Host img={accData.host.picture} name={accData.host.name} />
@@ -41,10 +43,10 @@ function AccommodationSheet(props) {
             </div>
             <div className="dropdowns">
                 <div className='dropdown'>
-                    <Dropdown key="Dropdown-1" title="Description" content={accData.description} />
+                    <Dropdown key="Dropdown-1" id="Dropdown-1" title="Description" content={accData.description} />
                 </div>
                 <div className='dropdown'>
-                    <Dropdown key="Dropdown-2" title="Équipement" content={accData.equipments} type="list" />
+                    <Dropdown key="Dropdown-2" id="Dropdown-2" title="Équipement" content={accData.equipments} type="list" />
                 </div>
             </div>
             <Footer />

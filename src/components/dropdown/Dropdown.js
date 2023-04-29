@@ -21,9 +21,9 @@ function Dropdown(props) {
     if (typeof content === 'object') {
         content = content.map(item => {
             return (
-                <div className="equipment">
+                <span key={item} className="equipment">
                     {item}
-                </div>
+                </span>
             )
         });
     }

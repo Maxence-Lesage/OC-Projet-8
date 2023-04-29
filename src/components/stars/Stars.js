@@ -6,7 +6,7 @@ function Stars(props) {
 
     let stars = [];
     for (let i = 0; i < 5; i++) {
-        stars.push(<FontAwesomeIcon className={"star " + (props.nbr > i ? "valid" : "")} icon={faStar} />);
+        stars.push(<FontAwesomeIcon key={i} className={"star " + (props.nbr > i ? "valid" : "")} icon={faStar} />);
     }
 
     return (
