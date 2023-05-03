@@ -8,13 +8,15 @@ import Stars from '../../components/stars/Stars';
 import data from "../../data.json";
 import Footer from '../../components/footer/Footer';
 import Tag from '../../components/tag/Tag';
-import { useLocation } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 
 function AccommodationSheet() {
 
-    const defaultId = { id: "c67ab8a7" };
-    let { id } = useLocation().state || defaultId;
+    const { id } = useParams();
     const accData = data.filter(item => item.id === id)[0];
+    if (!accData) {
+        return <Navigate to="/404" replace />;
+    }
     const image = accData.pictures;
     const title = accData.title;
     const location = accData.location;

@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" index element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="accommodation" element={<AccommodationSheet />} />
+        <Route path="accommodation/:id" element={<AccommodationSheet />} />
         <Route path="*" element={< Error404 />} />
       </Routes>
     </BrowserRouter>
